@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ai13.store — Best AI Tools 2026 — Ranked &amp; Priced</title>
+  <meta name="description" content="Compare the best AI tools of 2026. Real pricing, real features, real affiliate links. No BS. Claude, ChatGPT, Gemini, Leonardo AI, Midjourney, Canva, Make.com and more.">
+  <meta name="keywords" content="AI tools, best AI tools 2026, AI tool comparison, ChatGPT price, Claude price, Gemini, Leonardo AI, Midjourney, Canva AI, Make.com, GitHub Copilot">
+  <meta property="og:title" content="ai13.store — Best AI Tools 2026 — Ranked &amp; Priced">
+  <meta property="og:description" content="Compare AI tools. Real pricing. No BS.">
+  <meta property="og:url" content="https://ai13.store/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://ai13.store/">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #1a1a2e;
+      --card2: #12121a;
+      --accent: #bf5af2;
+      --accent2: #00f5d4;
+      --purple: #bf5af2;
+      --cyan: #00f5d4;
+      --text: #f0f0f0;
+      --muted: #a0a0b8;
+      --border: #2a2a3e;
+      --radius: 12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- SCROLLBAR ---- */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+    /* ---- NAV ---- */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      gap: 16px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-text {
+      font-size: 1.3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      white-space: nowrap;
+    }
+    .nav-tagline {
+      color: var(--muted);
+      font-size: 0.8rem;
+      display: none;
+    }
+    @media(min-width: 600px) { .nav-tagline { display: block; } }
+    .nav-actions { display: flex; gap: 10px; align-items: center; }
+    .btn-tip {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .btn-tip:hover { background: var(--accent); color: #fff; }
+
+    /* ---- HERO ---- */
+    .hero {
+      background: linear-gradient(160deg, #0f0f1e 0%, #0a0a0f 60%);
+      border-bottom: 1px solid var(--border);
+      padding: 72px 24px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 300px;
+      background: radial-gradient(ellipse at center, rgba(191,90,242,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      color: var(--muted);
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      max-width: 560px;
+      margin: 0 auto 28px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(191,90,242,0.12);
+      border: 1px solid rgba(191,90,242,0.3);
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ---- MAIN LAYOUT ---- */
+    .main-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media(min-width: 1024px) {
+      .main-wrap {
+        grid-template-columns: 1fr 300px;
+      }
+    }
+    .main-content { min-width: 0; }
+    .sidebar { min-width: 0; }
+
+    /* ---- SECTION HEADINGS ---- */
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .section-head h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .section-head .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ---- FILTER BAR ---- */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .filter-btn {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ---- TOOL CARDS GRID ---- */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 20px;
+    }
+    .tool-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--purple), var(--cyan));
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .tool-card:hover {
+      border-color: rgba(191,90,242,0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(191,90,242,0.1);
+    }
+    .tool-card:hover::before { opacity: 1; }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .card-name-wrap { flex: 1; min-width: 0; }
+    .card-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .card-company {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .card-price-badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(0,245,212,0.1);
+      border: 1px solid rgba(0,245,212,0.25);
+      border-radius: 8px;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--cyan);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .card-price-badge.free-badge {
+      background: rgba(52,199,89,0.1);
+      border-color: rgba(52,199,89,0.25);
+      color: #34c759;
+    }
+
+    .card-stars {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .stars-display {
+      display: flex;
+      gap: 1px;
+    }
+    .star { color: #f5c518; font-size: 0.85rem; }
+    .star.half { position: relative; display: inline-block; }
+    .rating-num {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .rating-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .card-desc {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .card-tiers {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .tier-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      background: var(--card2);
+      border-radius: 8px;
+      padding: 7px 10px;
+    }
+    .tier-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .tier-val {
+      font-size: 0.75rem;
+      color: var(--text);
+      font-weight: 700;
+      text-align: right;
+    }
+    .tier-val.green { color: #34c759; }
+    .tier-val.cyan { color: var(--cyan); }
+
+    .card-cats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .cat-tag {
+      background: rgba(191,90,242,0.1);
+      border: 1px solid rgba(191,90,242,0.2);
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .card-cta {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, var(--purple), #9b38d4);
+      color: #fff;
+      text-align: center;
+      padding: 11px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
+      margin-top: auto;
+    }
+    .card-cta:hover { opacity: 0.88; transform: scale(1.01); }
+    .card-cta.affiliate {
+      background: linear-gradient(135deg, #7c3aed, var(--cyan));
+    }
+    .affiliate-marker {
+      display: inline-block;
+      background: rgba(0,245,212,0.15);
+      border: 1px solid rgba(0,245,212,0.3);
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--cyan);
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    /* ---- SIDEBAR ---- */
+    .sidebar-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .sidebar-head {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar-head h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #34c759;
+      animation: vtrPulse 2s infinite;
+    }
+    .updated-time {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+    #ai-news { min-height: 200px; }
+    .news-item {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item a {
+      color: var(--text);
+      font-size: 0.83rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 4px;
+      line-height: 1.4;
+      transition: color 0.2s;
+    }
+    .news-item a:hover { color: var(--accent); }
+    .news-score {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    /* ---- WHY WE BUILT THIS ---- */
+    .why-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-top: 40px;
+    }
+    .why-section h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .why-section p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .why-section p:last-child { margin-bottom: 0; }
+    .why-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .why-point {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .why-point-icon { font-size: 1.3rem; margin-bottom: 6px; }
+    .why-point-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .why-point-text {
+      font-size: 0.77rem;
+      color: var(--muted);
+    }
+
+    /* ---- EMPIRE GRID ---- */
+    .empire-section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .empire-head {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .empire-head h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .empire-head p { color: var(--muted); font-size: 0.85rem; }
+    .empire-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .empire-link {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .empire-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(191,90,242,0.07);
+    }
+    .empire-link.current {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(191,90,242,0.1);
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: var(--card2);
+      border-top: 1px solid var(--border);
+      padding: 32px 20px;
+      text-align: center;
+    }
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .footer-logo {
+      font-size: 1.1rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .footer-text {
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto 14px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .footer-links a {
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-copy { color: #3a3a5a; font-size: 0.75rem; }
+    .footer-disclaimer {
+      color: #3a3a5a;
+      font-size: 0.72rem;
+      margin-top: 8px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ---- ANIMATIONS ---- */
+    @keyframes vtrPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .tool-card { animation: fadeInUp 0.4s ease both; }
+    .tool-card:nth-child(1)  { animation-delay: 0.05s; }
+    .tool-card:nth-child(2)  { animation-delay: 0.10s; }
+    .tool-card:nth-child(3)  { animation-delay: 0.15s; }
+    .tool-card:nth-child(4)  { animation-delay: 0.20s; }
+    .tool-card:nth-child(5)  { animation-delay: 0.25s; }
+    .tool-card:nth-child(6)  { animation-delay: 0.30s; }
+    .tool-card:nth-child(7)  { animation-delay: 0.35s; }
+    .tool-card:nth-child(8)  { animation-delay: 0.40s; }
+    .tool-card:nth-child(9)  { animation-delay: 0.45s; }
+    .tool-card:nth-child(10) { animation-delay: 0.50s; }
+    .tool-card:nth-child(11) { animation-delay: 0.55s; }
+    .tool-card:nth-child(12) { animation-delay: 0.60s; }
+
+    /* ---- RESPONSIVE ---- */
+    @media(max-width: 480px) {
+      .hero { padding: 48px 16px 40px; }
+      .main-wrap { padding: 24px 12px; gap: 24px; }
+      .empire-section { padding: 0 12px 40px; }
+      .tools-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <span style="font-size:1.4rem;">🤖</span>
+      <span class="nav-logo-text">ai13.store</span>
+    </a>
+    <span class="nav-tagline">Best AI Tools — Ranked &amp; Priced</span>
+    <div class="nav-actions">
+      <button class="btn-tip" onclick="openTip()">🧡 Tip</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-badge">
+    <span style="width:7px;height:7px;border-radius:50%;background:#34c759;animation:vtrPulse 2s infinite;display:inline-block;"></span>
+    Updated March 2026
+  </div>
+  <h1 style="margin-top:18px;">Stop Guessing.<br><span>Start Building.</span></h1>
+  <p class="hero-sub">Real AI tool prices, real features, real links. Updated March 2026. No sponsored rankings. No fake reviews.</p>
+</section>
+
+<!-- ========== MAIN ========== -->
+<div class="main-wrap">
+
+  <!-- LEFT: Tools -->
+  <main class="main-content">
+
+    <div class="section-head">
+      <div class="dot"></div>
+      <h2>AI Tools Comparison</h2>
+      <span style="color:var(--muted);font-size:0.8rem;margin-left:auto;">12 tools</span>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterTools('all',event)">All</button>
+      <button class="filter-btn" onclick="filterTools('free',event)">Free</button>
+      <button class="filter-btn" onclick="filterTools('under20',event)">Under $20/mo</button>
+      <button class="filter-btn" onclick="filterTools('creative',event)">Creative</button>
+      <button class="filter-btn" onclick="filterTools('writing',event)">Writing</button>
+      <button class="filter-btn" onclick="filterTools('coding',event)">Coding</button>
+      <button class="filter-btn" onclick="filterTools('automation',event)">Automation</button>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="tools-grid" id="tools-grid">
+
+      <!-- 1. Claude -->
+      <div class="tool-card" data-cat="writing coding free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(191,90,242,0.15);">🧠</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Claude</div>
+            <div class="card-company">Anthropic</div>
+          </div>
+          <div class="card-price-badge free-badge">Free</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.8</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">Exceptional at nuanced writing, long-context analysis, and coding. Claude.ai free tier gives access to Claude 3.5 Sonnet — one of the best free AI models available.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">Claude.ai — free</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Claude Pro</span>
+            <span class="tier-val cyan">$20/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Writing</span>
+          <span class="cat-tag">Coding</span>
+          <span class="cat-tag">Analysis</span>
+        </div>
+        <a href="https://claude.ai" target="_blank" rel="noopener" class="card-cta">Try Claude Free →</a>
+      </div>
+
+      <!-- 2. ChatGPT -->
+      <div class="tool-card" data-cat="writing coding free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(16,163,127,0.15);">💬</div>
+          <div class="card-name-wrap">
+            <div class="card-name">ChatGPT</div>
+            <div class="card-company">OpenAI</div>
+          </div>
+          <div class="card-price-badge free-badge">Free</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.7</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">The most widely used AI assistant. GPT-4o is available on the free tier. ChatGPT Plus unlocks higher rate limits, image generation via DALL·E 3, and GPT-4o with advanced voice.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">GPT-4o — free</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">ChatGPT Plus</span>
+            <span class="tier-val cyan">$20/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Writing</span>
+          <span class="cat-tag">Coding</span>
+          <span class="cat-tag">General</span>
+        </div>
+        <a href="https://chat.openai.com" target="_blank" rel="noopener" class="card-cta">Try ChatGPT Free →</a>
+      </div>
+
+      <!-- 3. Gemini -->
+      <div class="tool-card" data-cat="writing coding free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(66,133,244,0.15);">✨</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Gemini</div>
+            <div class="card-company">Google</div>
+          </div>
+          <div class="card-price-badge free-badge">Free</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="color:#555;">★</span>
+          </div>
+          <span class="rating-num">4.3</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">Google's flagship AI. Best choice for Google Workspace users — integrates natively with Gmail, Docs, and Drive. Gemini Advanced (1.5 Ultra) included in Google One AI Premium.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">Gemini 1.5 Flash — free</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Google One AI Premium</span>
+            <span class="tier-val cyan">$20/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Writing</span>
+          <span class="cat-tag">Google Suite</span>
+          <span class="cat-tag">Search</span>
+        </div>
+        <a href="https://gemini.google.com" target="_blank" rel="noopener" class="card-cta">Try Gemini Free →</a>
+      </div>
+
+      <!-- 4. Leonardo AI -->
+      <div class="tool-card" data-cat="creative free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(255,180,0,0.15);">🎨</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Leonardo AI</div>
+            <div class="card-company">Leonardo.Ai</div>
+          </div>
+          <div class="card-price-badge free-badge">Free</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.7</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">Best-in-class AI image generation with a generous free tier. 150 free credits daily. Supports ControlNet, fine-tuned models, and real-time canvas. Great for game assets and concept art.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">150 credits/day</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Apprentice Plan</span>
+            <span class="tier-val cyan">$12/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Creative</span>
+          <span class="cat-tag">Images</span>
+          <span class="cat-tag">Art</span>
+        </div>
+        <a href="https://app.leonardo.ai/?via=spunkart" target="_blank" rel="noopener" class="card-cta affiliate">Try Leonardo Free →<span class="affiliate-marker">aff</span></a>
+      </div>
+
+      <!-- 5. Midjourney -->
+      <div class="tool-card" data-cat="creative under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(100,120,255,0.15);">🖼️</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Midjourney</div>
+            <div class="card-company">Midjourney, Inc.</div>
+          </div>
+          <div class="card-price-badge">From $10/mo</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.8</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">The gold standard for AI art quality. Produces stunning, photorealistic and artistic imagery. No free tier — but the $10/mo Basic plan gives 200 image generations per month.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val" style="color:var(--muted);">None</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Basic Plan</span>
+            <span class="tier-val cyan">$10/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Creative</span>
+          <span class="cat-tag">Art</span>
+          <span class="cat-tag">Images</span>
+        </div>
+        <a href="https://www.midjourney.com" target="_blank" rel="noopener" class="card-cta">Try Midjourney →</a>
+      </div>
+
+      <!-- 6. Canva AI -->
+      <div class="tool-card" data-cat="creative free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(0,200,150,0.15);">🎭</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Canva AI</div>
+            <div class="card-company">Canva</div>
+          </div>
+          <div class="card-price-badge free-badge">Free Tier</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.6</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">AI-powered design for everyone. Magic Studio includes AI image generation, background removal, text-to-image, and AI writing tools. Canva Pro unlocks all premium templates and assets.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">Limited AI features</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Canva Pro</span>
+            <span class="tier-val cyan">$15/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Creative</span>
+          <span class="cat-tag">Design</span>
+          <span class="cat-tag">Social</span>
+        </div>
+        <a href="https://www.canva.com/join/spunkart" target="_blank" rel="noopener" class="card-cta affiliate">Try Canva Free →<span class="affiliate-marker">aff</span></a>
+      </div>
+
+      <!-- 7. Make.com -->
+      <div class="tool-card" data-cat="automation free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(148,100,255,0.15);">⚙️</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Make.com</div>
+            <div class="card-company">Make (formerly Integromat)</div>
+          </div>
+          <div class="card-price-badge free-badge">Free</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.7</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">No-code automation powerhouse. Connect 1,800+ apps with visual drag-and-drop workflows. Free tier includes 1,000 operations/month. Perfect for AI-powered automations and integrations.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">1,000 ops/mo</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Core Plan</span>
+            <span class="tier-val cyan">$9/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Automation</span>
+          <span class="cat-tag">No-Code</span>
+        </div>
+        <a href="https://www.make.com/en/register?pc=spunk" target="_blank" rel="noopener" class="card-cta affiliate">Try Make Free →<span class="affiliate-marker">aff</span></a>
+      </div>
+
+      <!-- 8. Fiverr -->
+      <div class="tool-card" data-cat="creative writing">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(29,191,115,0.15);">💼</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Fiverr AI Gigs</div>
+            <div class="card-company">Fiverr</div>
+          </div>
+          <div class="card-price-badge">Pay per gig</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="color:#555;">★</span>
+          </div>
+          <span class="rating-num">4.4</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">Hire AI-specialized freelancers: prompt engineers, AI image artists, AI video editors, chatbot builders, and automation experts. Pay per project — no subscription required.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">Free to browse</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Cost</span>
+            <span class="tier-val cyan">From $5/gig</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Freelancers</span>
+          <span class="cat-tag">Creative</span>
+          <span class="cat-tag">Writing</span>
+        </div>
+        <a href="https://www.fiverr.com/s/spunkart" target="_blank" rel="noopener" class="card-cta affiliate">Find AI Freelancers →<span class="affiliate-marker">aff</span></a>
+      </div>
+
+      <!-- 9. GitHub Copilot -->
+      <div class="tool-card" data-cat="coding free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(240,240,240,0.1);">👾</div>
+          <div class="card-name-wrap">
+            <div class="card-name">GitHub Copilot</div>
+            <div class="card-company">Microsoft / GitHub</div>
+          </div>
+          <div class="card-price-badge free-badge">Free for students</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.6</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">AI pair programmer built into VS Code, JetBrains, and Neovim. Autocompletes code, explains bugs, and writes entire functions. Free for verified students and open source maintainers.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">Students &amp; OSS maintainers</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Individual</span>
+            <span class="tier-val cyan">$10/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Coding</span>
+          <span class="cat-tag">IDE</span>
+          <span class="cat-tag">Dev Tools</span>
+        </div>
+        <a href="https://github.com/features/copilot" target="_blank" rel="noopener" class="card-cta">Try GitHub Copilot →</a>
+      </div>
+
+      <!-- 10. Perplexity AI -->
+      <div class="tool-card" data-cat="writing free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(0,200,200,0.12);">🔍</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Perplexity AI</div>
+            <div class="card-company">Perplexity AI, Inc.</div>
+          </div>
+          <div class="card-price-badge free-badge">Free</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.6</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">The AI-powered search engine that cites its sources. Ask complex questions and get structured answers with real-time web citations. Pro unlocks unlimited Pro Search with GPT-4o and Claude.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">5 Pro searches/day</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Pro Plan</span>
+            <span class="tier-val cyan">$20/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Search</span>
+          <span class="cat-tag">Research</span>
+          <span class="cat-tag">Writing</span>
+        </div>
+        <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="card-cta">Try Perplexity Free →</a>
+      </div>
+
+      <!-- 11. ElevenLabs -->
+      <div class="tool-card" data-cat="creative free under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(255,80,100,0.12);">🎙️</div>
+          <div class="card-name-wrap">
+            <div class="card-name">ElevenLabs</div>
+            <div class="card-company">ElevenLabs</div>
+          </div>
+          <div class="card-price-badge free-badge">Free Tier</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.8</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">The most realistic AI voice synthesis on the market. Clone any voice in seconds, generate audiobooks, podcasts, or voiceovers. Free tier includes 10,000 characters/month with 3 custom voices.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Tier</span>
+            <span class="tier-val green">10,000 chars/mo</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Starter Plan</span>
+            <span class="tier-val cyan">$5/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Creative</span>
+          <span class="cat-tag">Voice</span>
+          <span class="cat-tag">Audio</span>
+        </div>
+        <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="card-cta">Try ElevenLabs Free →</a>
+      </div>
+
+      <!-- 12. Runway ML -->
+      <div class="tool-card" data-cat="creative under20">
+        <div class="card-top">
+          <div class="card-icon" style="background:rgba(255,60,200,0.12);">🎬</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Runway ML</div>
+            <div class="card-company">Runway AI, Inc.</div>
+          </div>
+          <div class="card-price-badge">From $12/mo</div>
+        </div>
+        <div class="card-stars">
+          <div class="stars-display">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.5</span>
+          <span class="rating-label">/5</span>
+        </div>
+        <p class="card-desc">Leading AI video generation platform. Gen-3 Alpha produces cinema-quality video from text prompts. Used by professional filmmakers and content creators. Free trial includes limited credits.</p>
+        <div class="card-tiers">
+          <div class="tier-row">
+            <span class="tier-label">Free Trial</span>
+            <span class="tier-val green">125 one-time credits</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Standard Plan</span>
+            <span class="tier-val cyan">$12/mo</span>
+          </div>
+        </div>
+        <div class="card-cats">
+          <span class="cat-tag">Creative</span>
+          <span class="cat-tag">Video</span>
+          <span class="cat-tag">Film</span>
+        </div>
+        <a href="https://runwayml.com" target="_blank" rel="noopener" class="card-cta">Try Runway ML →</a>
+      </div>
+
+    </div><!-- /tools-grid -->
+
+    <!-- Why We Built This -->
+    <div class="why-section">
+      <h2>Why We Built This</h2>
+      <p>Every AI tools roundup on the internet is monetized noise — affiliate farms stuffed with outdated pricing, fake "Editor's Choice" badges, and tools that paid for placement.</p>
+      <p>We built ai13.store because we use these tools ourselves. We wanted one honest place: real prices (verified March 2026), real affiliate disclosures, and no fake user counts or inflated review numbers. Just the tools that actually work.</p>
+      <div class="why-points">
+        <div class="why-point">
+          <div class="why-point-icon">✅</div>
+          <div class="why-point-title">Real Prices Only</div>
+          <div class="why-point-text">Every price is verified from the official pricing page as of March 2026.</div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon">🔗</div>
+          <div class="why-point-title">Affiliate Disclosures</div>
+          <div class="why-point-text">Links marked "aff" are affiliate links. We earn a commission at no cost to you.</div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon">🚫</div>
+          <div class="why-point-title">No Paid Placements</div>
+          <div class="why-point-text">No tool paid for ranking. Order is based on reach and usefulness.</div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon">🔄</div>
+          <div class="why-point-title">Live News Feed</div>
+          <div class="why-point-text">AI news pulled from Hacker News every 10 seconds. Always current.</div>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- /main-content -->
+
+  <!-- RIGHT: Sidebar -->
+  <aside class="sidebar">
+
+    <!-- Live AI News -->
+    <div class="sidebar-card">
+      <div class="sidebar-head">
+        <h3>🔥 AI News Live</h3>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span class="live-dot"></span>
+          <span class="updated-time" id="ai-news-updated">—</span>
+        </div>
+      </div>
+      <div id="ai-news">
+        <p style="color:var(--muted);padding:16px;font-size:0.82rem;">Loading AI news...</p>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="sidebar-card">
+      <div class="sidebar-head">
+        <h3>⚡ Quick Start</h3>
+      </div>
+      <div style="padding:16px;display:flex;flex-direction:column;gap:8px;">
+        <a href="https://app.leonardo.ai/?via=spunkart" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;text-decoration:none;transition:border-color 0.2s;"
+           onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <span style="color:var(--text);font-size:0.82rem;font-weight:600;">🎨 Leonardo AI — Free</span>
+          <span style="color:var(--cyan);font-size:0.75rem;">150/day →</span>
+        </a>
+        <a href="https://www.make.com/en/register?pc=spunk" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;text-decoration:none;transition:border-color 0.2s;"
+           onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <span style="color:var(--text);font-size:0.82rem;font-weight:600;">⚙️ Make.com — Free</span>
+          <span style="color:var(--cyan);font-size:0.75rem;">1k ops →</span>
+        </a>
+        <a href="https://www.canva.com/join/spunkart" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;text-decoration:none;transition:border-color 0.2s;"
+           onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <span style="color:var(--text);font-size:0.82rem;font-weight:600;">🎭 Canva AI — Free</span>
+          <span style="color:var(--cyan);font-size:0.75rem;">Join now →</span>
+        </a>
+        <a href="https://elevenlabs.io" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;text-decoration:none;transition:border-color 0.2s;"
+           onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <span style="color:var(--text);font-size:0.82rem;font-weight:600;">🎙️ ElevenLabs — Free</span>
+          <span style="color:var(--cyan);font-size:0.75rem;">10k chars →</span>
+        </a>
+        <a href="https://www.fiverr.com/s/spunkart" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;text-decoration:none;transition:border-color 0.2s;"
+           onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <span style="color:var(--text);font-size:0.82rem;font-weight:600;">💼 Hire AI Freelancers</span>
+          <span style="color:var(--cyan);font-size:0.75rem;">Fiverr →</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Coinbase -->
+    <div class="sidebar-card">
+      <div style="padding:16px;">
+        <p style="font-size:0.78rem;font-weight:700;color:var(--text);margin-bottom:8px;">💰 Buy Crypto for AI APIs</p>
+        <p style="font-size:0.75rem;color:var(--muted);margin-bottom:12px;">Pay for Claude, OpenAI, and other APIs with crypto. Get started on Coinbase.</p>
+        <a href="https://coinbase.com/join/YAGES3X?src=referral-link" target="_blank" rel="noopener"
+           style="display:block;background:linear-gradient(135deg,#0052ff,#0099ff);color:#fff;text-align:center;padding:9px 12px;border-radius:8px;font-size:0.8rem;font-weight:700;text-decoration:none;">
+          Get Coinbase →<span style="display:inline-block;background:rgba(255,255,255,0.2);border-radius:4px;padding:1px 5px;font-size:0.65rem;font-weight:700;margin-left:6px;">aff</span>
+        </a>
+      </div>
+    </div>
+
+  </aside>
+
+</div><!-- /main-wrap -->
+
+<!-- ========== EMPIRE GRID ========== -->
+<section class="empire-section">
+  <div style="border-top:1px solid var(--border);padding-top:40px;">
+    <div class="empire-head">
+      <h2>The Network</h2>
+      <p>More sites from the same builder</p>
+    </div>
+    <div class="empire-grid">
+      <a href="https://spunk.bet" target="_blank" rel="noopener" class="empire-link">spunk.bet</a>
+      <a href="https://pfp.best" target="_blank" rel="noopener" class="empire-link">pfp.best</a>
+      <a href="https://spunkart.com" target="_blank" rel="noopener" class="empire-link">spunkart.com</a>
+      <a href="https://13.money" target="_blank" rel="noopener" class="empire-link">13.money</a>
+      <a href="https://13.markets" target="_blank" rel="noopener" class="empire-link">13.markets</a>
+      <a href="https://13.golf" target="_blank" rel="noopener" class="empire-link">13.golf</a>
+      <a href="https://13.energy" target="_blank" rel="noopener" class="empire-link">13.energy</a>
+      <a href="https://13.dance" target="_blank" rel="noopener" class="empire-link">13.dance</a>
+      <a href="https://free.institute" target="_blank" rel="noopener" class="empire-link">free.institute</a>
+      <a href="https://free.gripe" target="_blank" rel="noopener" class="empire-link">free.gripe</a>
+      <a href="https://chicago.coach" target="_blank" rel="noopener" class="empire-link">chicago.coach</a>
+      <a href="https://predict.horse" target="_blank" rel="noopener" class="empire-link">predict.horse</a>
+      <a href="https://predict.pics" target="_blank" rel="noopener" class="empire-link">predict.pics</a>
+      <a href="https://predict.mom" target="_blank" rel="noopener" class="empire-link">predict.mom</a>
+      <a href="https://predict.codes" target="_blank" rel="noopener" class="empire-link">predict.codes</a>
+      <a href="https://predict.boats" target="_blank" rel="noopener" class="empire-link">predict.boats</a>
+      <a href="https://predict.yachts" target="_blank" rel="noopener" class="empire-link">predict.yachts</a>
+      <a href="https://alien.best" target="_blank" rel="noopener" class="empire-link">alien.best</a>
+      <a href="https://alien.beauty" target="_blank" rel="noopener" class="empire-link">alien.beauty</a>
+      <a href="https://plush.best" target="_blank" rel="noopener" class="empire-link">plush.best</a>
+      <a href="https://plush.surf" target="_blank" rel="noopener" class="empire-link">plush.surf</a>
+      <a href="https://clown.best" target="_blank" rel="noopener" class="empire-link">clown.best</a>
+      <a href="https://clown.surf" target="_blank" rel="noopener" class="empire-link">clown.surf</a>
+      <a href="https://clown.cam" target="_blank" rel="noopener" class="empire-link">clown.cam</a>
+      <a href="https://clown.sbs" target="_blank" rel="noopener" class="empire-link">clown.sbs</a>
+      <a href="https://iai.autos" target="_blank" rel="noopener" class="empire-link">iai.autos</a>
+      <a href="https://iai.boats" target="_blank" rel="noopener" class="empire-link">iai.boats</a>
+      <a href="https://i13.best" target="_blank" rel="noopener" class="empire-link">i13.best</a>
+      <a href="https://i13.buzz" target="_blank" rel="noopener" class="empire-link">i13.buzz</a>
+      <a href="https://i13.autos" target="_blank" rel="noopener" class="empire-link">i13.autos</a>
+      <a href="https://i13.lat" target="_blank" rel="noopener" class="empire-link">i13.lat</a>
+      <a href="https://i13.pics" target="_blank" rel="noopener" class="empire-link">i13.pics</a>
+      <a href="https://i13.space" target="_blank" rel="noopener" class="empire-link">i13.space</a>
+      <a href="https://ai13.fun" target="_blank" rel="noopener" class="empire-link">ai13.fun</a>
+      <a href="https://ai13.store" target="_blank" rel="noopener" class="empire-link current">ai13.store</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🤖 ai13.store</div>
+    <p class="footer-text">The Best AI Tools — Ranked &amp; Priced. Real pricing verified March 2026. Part of the SPUNK LLC network.</p>
+    <div class="footer-links">
+      <a href="https://spunkart.com" target="_blank" rel="noopener">SpunkArt.com</a>
+      <a href="https://spunk.bet" target="_blank" rel="noopener">Spunk.bet</a>
+      <a href="https://pfp.best" target="_blank" rel="noopener">pfp.best</a>
+      <a href="https://ai13.fun" target="_blank" rel="noopener">ai13.fun</a>
+      <a href="/sitemap.xml">Sitemap</a>
+      <a href="/robots.txt">Robots</a>
+      <button onclick="openTip()" style="background:none;border:none;color:var(--muted);font-size:0.78rem;cursor:pointer;padding:0;">🧡 Tip</button>
+    </div>
+    <p class="footer-copy">&copy; 2026 SPUNK LLC. All rights reserved.</p>
+    <p class="footer-disclaimer">Some links are affiliate links — marked "aff". We earn a small commission at no cost to you. All prices are verified from official sources as of March 2026 and may have changed. This site is not affiliated with any AI company unless otherwise stated.</p>
+  </div>
+</footer>
+
+<!-- ========== VTR BADGE ========== -->
+<div style="position:fixed;bottom:12px;right:12px;background:#1a1a2e;border:1px solid #2a2a3e;border-radius:20px;padding:6px 14px;font-size:12px;color:#a0a0b8;z-index:9999;display:flex;align-items:center;gap:6px;" id="vtr-badge">
+  <span style="width:7px;height:7px;border-radius:50%;background:#bf5af2;animation:vtrPulse 2s infinite;display:inline-block;"></span>
+  <span id="vtr-count">...</span>
+</div>
+
+<!-- ========== TIP MODAL ========== -->
+<div id="tip-modal" onclick="if(event.target===this)closeTip()" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;z-index:10000;">
+  <div style="background:#1a1a2e;border:1px solid #2a2a3e;border-radius:16px;padding:32px;max-width:420px;width:90%;text-align:center;">
+    <h3 style="color:#f0f0f0;margin-bottom:8px;">🧡 Tip Spunk</h3>
+    <p style="color:#a0a0b8;font-size:0.9rem;margin-bottom:20px;">Built by one person with AI. Every tip keeps these sites free. 🧡</p>
+    <div id="tip-addr" onclick="copyTip()" style="background:#0a0a0f;border:1px solid #2a2a3e;border-radius:8px;padding:12px;font-family:monospace;font-size:0.75rem;color:#00f5d4;word-break:break-all;cursor:pointer;margin-bottom:8px;">bc1pkepg42ctsvsxk499qu02qqyyz88gwjchnjpsu22wmng9rhpfv3jqw2t2hm</div>
+    <p style="color:#a0a0b8;font-size:0.8rem;margin-bottom:16px;">Click to copy • Bitcoin (BTC)</p>
+    <button onclick="closeTip()" style="background:#2a2a3e;color:#f0f0f0;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- ========== SCRIPTS ========== -->
+<script>
+// ---- TIP MODAL ----
+function openTip(){var m=document.getElementById('tip-modal');if(m){m.style.display='flex';}}
+function closeTip(){var m=document.getElementById('tip-modal');if(m){m.style.display='none';}}
+function copyTip(){navigator.clipboard.writeText('bc1pkepg42ctsvsxk499qu02qqyyz88gwjchnjpsu22wmng9rhpfv3jqw2t2hm').then(function(){var el=document.getElementById('tip-addr');if(el){var o=el.textContent;el.textContent='✓ Copied!';setTimeout(function(){el.textContent=o;},2000);}}).catch(function(){});}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeTip();});
+
+// ---- FILTER ----
+function filterTools(cat, e) {
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  if (e && e.target) e.target.classList.add('active');
+  document.querySelectorAll('.tool-card').forEach(function(c) {
+    if (cat === 'all') { c.style.display = ''; return; }
+    c.style.display = (c.dataset.cat && c.dataset.cat.includes(cat)) ? '' : 'none';
+  });
+}
+
+// ---- HN AI NEWS ----
+async function loadAINews() {
+  try {
+    const ids = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json').then(r=>r.json());
+    const stories = await Promise.all(ids.slice(0,40).map(id =>
+      fetch('https://hacker-news.firebaseio.com/v0/item/'+id+'.json').then(r=>r.json()).catch(()=>null)
+    ));
+    const aiKeywords = ['ai','llm','gpt','claude','openai','anthropic','gemini','llama','machine learning','artificial intelligence','neural','diffusion'];
+    const aiStories = stories
+      .filter(s => s && s.title && aiKeywords.some(k => s.title.toLowerCase().includes(k)))
+      .slice(0, 6);
+    const el = document.getElementById('ai-news');
+    if (!el) return;
+    if (aiStories.length) {
+      el.innerHTML = aiStories.map(s => `
+        <div class="news-item">
+          <a href="${s.url || 'https://news.ycombinator.com/item?id='+s.id}" target="_blank" rel="noopener">${s.title}</a>
+          <span class="news-score">▲ ${s.score||0} points</span>
+        </div>
+      `).join('');
+    } else {
+      el.innerHTML = '<p style="color:var(--muted);padding:16px;font-size:0.82rem;">No AI stories found right now — check back soon.</p>';
+    }
+    const upd = document.getElementById('ai-news-updated');
+    if (upd) upd.textContent = new Date().toLocaleTimeString();
+  } catch(e) {
+    const el = document.getElementById('ai-news');
+    if (el) el.innerHTML = '<p style="color:var(--muted);padding:16px;font-size:0.82rem;">Fetching latest AI news...</p>';
+  }
+}
+loadAINews();
+setInterval(loadAINews, 10000);
+
+// ---- VTR ----
+(function(){
+  if(window._vtrInit)return;window._vtrInit=true;
+  var DB='https://predict-network-ec767-default-rtdb.firebaseio.com';
+  var site=(location.hostname||'local').replace(/\./g,'_').replace(/[#$\[\]]/g,'_');
+  var sid='s'+Math.random().toString(36).slice(2)+Date.now().toString(36);
+  var sRef=DB+'/vtr/'+site+'/s/'+sid+'.json';
+  var allRef=DB+'/vtr/'+site+'/s.json';
+  var now=Date.now;
+  function ping(){fetch(sRef,{method:'PUT',body:JSON.stringify({t:now()}),headers:{'Content-Type':'application/json'}}).catch(function(){});}
+  function refresh(){
+    fetch(allRef).then(function(r){return r.json();}).then(function(d){
+      var n=1;
+      if(d&&typeof d==='object'){
+        var vals=Object.values(d);
+        n=Math.max(1,vals.filter(function(v){return v&&v.t&&(now()-v.t)<25000;}).length);
+        Object.entries(d).forEach(function(e){if(e[1]&&e[1].t&&(now()-e[1].t)>60000)fetch(DB+'/vtr/'+site+'/s/'+e[0]+'.json',{method:'DELETE'}).catch(function(){});});
+      }
+      var el=document.getElementById('vtr-count');
+      if(el)el.textContent=n+(n===1?' visitor':' visitors')+' online';
+    }).catch(function(){var el=document.getElementById('vtr-count');if(el)el.textContent='1 visitor online';});
+  }
+  var day=new Date().toISOString().slice(0,10);
+  var hRef=DB+'/vtr/'+site+'/hits/'+day+'.json';
+  fetch(hRef).then(function(r){return r.json();}).then(function(n){fetch(hRef,{method:'PUT',body:JSON.stringify((n||0)+1),headers:{'Content-Type':'application/json'}}).catch(function(){});}).catch(function(){});
+  window.addEventListener('pagehide',function(){fetch(sRef,{method:'DELETE',keepalive:true}).catch(function(){});});
+  ping();refresh();
+  setInterval(function(){ping();refresh();},10000);
+})();
+</script>
+
+</body>
+</html>
